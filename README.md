@@ -1,50 +1,89 @@
 <!--
-  Cyber README — Next.js Microsite Template
-  Aesthetic: violet/magenta/cyan, mobile-friendly, GitHub-safe.
-  Replace GIF placeholders with direct .gif/.apng URLs when you have them.
+  Cyber README — Next.js Microsite Template (one-file, no assets)
+  Notes:
+  - GitHub strips inline style attributes, so gradient title is an inline SVG.
+  - Long animated neon dividers are inline SVG too (no external files).
+  - Keep code fences ONLY around TS/CLI snippets to avoid bleed.
 -->
 
-<!-- Title -->
-<h1 align="center" style="font-weight:800;">
-  <span style="background: linear-gradient(90deg,#8A2BE2,#FF00CC,#00E5FF); -webkit-background-clip: text; background-clip: text; color: transparent;">
-    Next.js Microsite Setup (TypeScript Template)
-  </span>
-</h1>
-
-<!-- Animated typing subtitle (small) -->
+<!-- Gradient Title (SVG, works on GitHub) -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2600&pause=800&center=true&vCenter=true&width=520&lines=%F0%9F%92%A1+Next.js+15+App+Router;%F0%9F%93%9A+Copy%2FPaste+page.tsx+stubs;%F0%9F%9A%80+Ship+internal+sub-sites+fast" alt="Typing subtitle" />
+  <svg width="100%" height="70" viewBox="0 0 1200 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Next.js Microsite Setup (TypeScript Template)">
+    <defs>
+      <linearGradient id="titleGradient" x1="0" x2="1">
+        <stop offset="0%" stop-color="#8A2BE2"/>
+        <stop offset="50%" stop-color="#FF00CC"/>
+        <stop offset="100%" stop-color="#00E5FF"/>
+      </linearGradient>
+      <filter id="titleGlow">
+        <feGaussianBlur stdDeviation="2.2" result="blur"/>
+        <feMerge>
+          <feMergeNode in="blur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <text x="50%" y="48" text-anchor="middle" font-size="30" font-family="Segoe UI, Ubuntu, Roboto, Helvetica, Arial, sans-serif" font-weight="800" fill="url(#titleGradient)" filter="url(#titleGlow)">
+      Next.js Microsite Setup (TypeScript Template)
+    </text>
+  </svg>
 </p>
 
-<!-- Badges -->
+<!-- Typing subtitle -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Next.js-15-000000?logo=nextdotjs" />
-  <img src="https://img.shields.io/badge/React-19-20232a?logo=react" />
-  <img src="https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/App_Router-Enabled-8A2BE2" />
-  <img src="https://img.shields.io/badge/License-Custom-FF00CC" />
-  <img src="https://img.shields.io/badge/Status-Template%20Ready-22c55e" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2600&pause=900&center=true&vCenter=true&width=640&lines=%F0%9F%92%A1+Next.js+15+App+Router;%F0%9F%93%9A+Copy%2FPaste+page.tsx+stubs;%F0%9F%9A%80+Build+internal+sub-sites+fast" alt="typing-subtitle" />
 </p>
 
-<!-- Optional animated sticker row (swap in direct GIF/APNG URLs later) -->
+<!-- Tech badges -->
 <p align="center">
-  <!-- <img src="YOUR_GIF_OR_APNG_1" height="54" /> -->
-  <!-- <img src="YOUR_GIF_OR_APNG_2" height="54" /> -->
+  <a href="#folder-structure"><img src="https://img.shields.io/badge/Next.js-15-000000?logo=nextdotjs" alt="Next.js 15"/></a>
+  <a href="#page-templates-typescript"><img src="https://img.shields.io/badge/React-19-20232a?logo=react" alt="React 19"/></a>
+  <a href="#language--compatibility"><img src="https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript&logoColor=white" alt="TS 5.x"/></a>
+  <img src="https://img.shields.io/badge/App_Router-Enabled-8A2BE2" alt="App Router"/>
+  <img src="https://img.shields.io/badge/License-Custom-FF00CC" alt="License"/>
+  <img src="https://img.shields.io/badge/Status-Template%20Ready-22c55e" alt="Status"/>
 </p>
 
-<!-- Gradient divider -->
-<p align="center"><img src="assets/divider.svg" width="85%" alt="divider" /></p>
+<!-- Quick-links blocky buttons -->
+<p align="center">
+  <a href="#quick-start"><img src="https://img.shields.io/badge/Quick_Start-%E2%9A%A1-6b21e6?style=for-the-badge" alt="Quick Start"></a>
+  <a href="#folder-structure"><img src="https://img.shields.io/badge/Structure-%F0%9F%93%81-ca27b9?style=for-the-badge" alt="Structure"></a>
+  <a href="#page-templates-typescript"><img src="https://img.shields.io/badge/Templates-%F0%9F%96%A5-0ea5e9?style=for-the-badge" alt="Templates"></a>
+  <a href="#why-microsites-benefits--use-cases"><img src="https://img.shields.io/badge/Benefits-%F0%9F%8C%9F-bf26ff?style=for-the-badge" alt="Benefits"></a>
+</p>
 
-<!-- Two-column layout: main left, info rail right. Stacks on mobile. -->
+<!-- Optional animated stickers (plug direct GIF/APNG URLs later) -->
+<p align="center">
+  <!-- <img src="DIRECT_GIF_URL" height="54"/> -->
+  <!-- <img src="DIRECT_GIF_URL" height="54"/> -->
+</p>
+
+<!-- Neon divider (inline SVG) -->
+<p align="center">
+  <svg viewBox="0 0 1600 12" width="92%" height="12" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="divider">
+    <defs>
+      <linearGradient id="d1" x1="0" x2="1">
+        <stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/>
+      </linearGradient>
+      <filter id="dg1"><feGaussianBlur stdDeviation="1.8"/></filter>
+    </defs>
+    <rect x="0" y="5" width="1600" height="2" fill="url(#d1)" opacity="0.75" filter="url(#dg1)"/>
+    <rect x="-1600" y="5" width="1600" height="2" fill="url(#d1)"><animate attributeName="x" from="-1600" to="1600" dur="6s" repeatCount="indefinite"/></rect>
+  </svg>
+</p>
+
+<!-- Two-column layout: main left, info rail right -->
 <table>
-  <tr>
-    <td valign="top" width="68%">
+<tr>
+<td valign="top" width="66%">
 
 > Build a small **“microsite” inside your main Next.js app** (e.g. `/brand`, `/press`, `/docs`) with clean, URL-mirroring folders and a local layout.  
-> This guide provides a TypeScript-based blank template showing the structure, page files, and benefits of integrating microsites into larger applications.
+> This guide provides a TypeScript blank template showing the structure, page files, and practical benefits of integrating microsites into larger apps.
 
 <!-- Divider -->
-<p align="center"><img src="assets/divider.svg" width="70%" alt="divider" /></p>
+<p align="center">
+  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d2" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d2)" opacity="0.75"/><rect x="-1600" y="5" width="1600" height="2" fill="url(#d2)"><animate attributeName="x" from="-1600" to="1600" dur="6s" repeatCount="indefinite"/></rect></svg>
+</p>
 
 ## Table of Contents
 - [Overview](#overview)
@@ -58,61 +97,88 @@
 - [FAQ](#faq)
 - [Custom Open License — Microsite System Template](#custom-open-license--microsite-system-template)
 
-<!-- Divider -->
-<p align="center"><img src="assets/divider.svg" width="70%" alt="divider" /></p>
+<p align="center">
+  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d3" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d3)" opacity="0.75"/><rect x="-1600" y="5" width="1600" height="2" fill="url(#d3)"><animate attributeName="x" from="-1600" to="1600" dur="6s" repeatCount="indefinite"/></rect></svg>
+</p>
 
 ## Overview
-
-A **microsite** is a self-contained group of pages living under a single path like `/<siteName>` inside your primary Next.js app.  
-It uses the same stack, styles, and build process but can have its **own navigation, design, and layout** — perfect for affiliate brands, sub-projects, or special campaigns.
+A **microsite** is a self-contained set of pages under a single path like `/<siteName>`. It shares your app’s stack and build but can have its **own navigation, styling, and layout** — ideal for affiliates, sub-brands, or campaigns.
 
 > [!TIP]
-> This document targets **Next.js 15 (App Router)** with **TypeScript**.  
-> If you prefer JS, keep the folder structure and drop the types.
+> This template assumes **Next.js 15 (App Router)** and **TypeScript**. If you prefer JS, keep the folders and drop the types.
 
-<!-- Divider -->
-<p align="center"><img src="assets/divider.svg" width="70%" alt="divider" /></p>
+<p align="center">
+  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d4" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d4)" opacity="0.75"/><rect x="-1600" y="5" width="1600" height="2" fill="url(#d4)"><animate attributeName="x" from="-1600" to="1600" dur="6s" repeatCount="indefinite"/></rect></svg>
+</p>
 
 ## Why Microsites? (Benefits & Use Cases)
 
-Microsites aren’t just smaller websites — they’re a smart, modular extension of your main platform.  
-Here are ten clear benefits and technical reasons to use them:
+**Quick matrix (pros/cons)**
 
-1. **Cost-Efficient Deployment** — Reuse your existing hosting and CI/CD. No separate domain, SSL, or server needed.  
-2. **Shared Infrastructure** — Auth, analytics, and runtime dependencies are centralized, lowering maintenance overhead.  
-3. **Centralized Maintenance** — Updates to UI packages, design tokens, or tooling propagate to every microsite automatically.  
-4. **Stronger Brand Cohesion** — Subsidiaries/affiliates keep unique sections while staying visually consistent with the parent.  
-5. **SEO Synergy** — Subpaths inherit domain authority. Internal links amplify cross-discoverability.  
-6. **Simplified Content Ops** — One repo means easier review, docs, and change management.  
-7. **Easier Cross-Promotion** — Inter-microsite linking boosts session length and reduces bounce.  
-8. **Fast Launch for New Projects** — Create folders + `page.tsx` files; ship seasonal or experimental campaigns fast.  
-9. **Scoped Customization** — Per-site `layout.tsx` enables local theming without touching the parent layout.  
-10. **Scalable Multi-Tenant Pattern** — The structure expands cleanly if you formalize tenants later.
+| Capability / Outcome            | Microsite Approach | Alternative |
+|---------------------------------|:------------------:|:-----------:|
+| Cost-efficient hosting          | ✔️                 | ❌          |
+| Shared auth/analytics           | ✔️                 | ❌          |
+| Centralized maintenance         | ✔️                 | ~           |
+| Brand cohesion (sub-brands)     | ✔️                 | ~           |
+| SEO synergy (subpaths)          | ✔️                 | ❌          |
+| Single-repo content ops         | ✔️                 | ❌          |
+| Easy cross-promotion            | ✔️                 | ❌          |
+| Fast seasonal launches          | ✔️                 | ~           |
+| Per-site layout/theming         | ✔️                 | ~           |
+| Multi-tenant friendly           | ✔️                 | ❌          |
 
-<!-- Divider -->
-<p align="center"><img src="assets/divider.svg" width="70%" alt="divider" /></p>
+**Details**
+1) **Cost-Efficient** — Reuse hosting & CI/CD; no extra domain/SSL.  
+2) **Shared Infra** — Auth, analytics, and libs are centralized.  
+3) **Centralized Maintenance** — Dependency & token updates fan-out.  
+4) **Brand Cohesion** — Unique sections, consistent parent look.  
+5) **SEO Synergy** — Subpaths inherit parent authority.  
+6) **Simplified Content Ops** — One repo simplifies reviews & releases.  
+7) **Cross-Promotion** — Internal linking boosts retention.  
+8) **Fast Launch** — New microsite = a folder + `page.tsx`.  
+9) **Scoped Customization** — Per-site `layout.tsx` keeps changes local.  
+10) **Scalable** — Clean path to multi-tenant later.
+
+<p align="center">
+  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d5" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d5)" opacity="0.75"/><rect x="-1600" y="5" width="1600" height="2" fill="url(#d5)"><animate attributeName="x" from="-1600" to="1600" dur="6s" repeatCount="indefinite"/></rect></svg>
+</p>
 
 ## Language & Compatibility
+- **Built for:** Next.js 15 (App Router) + **TypeScript**  
+- **JavaScript usage:** rename `.tsx` → `.jsx`, remove types (e.g., `: { params: { index: string } }`)  
+- **Other frameworks:** Nuxt/Remix etc. have different routing; adapt folder names.
 
-- **Built for:** Next.js 15 (App Router) + **TypeScript**.  
-- Works with **JavaScript**: rename `.tsx` → `.jsx` and remove type annotations (e.g., `: { params: { index: string } }`).  
-- Other frameworks (Nuxt, Remix, etc.) use different routing conventions — adapt folder names accordingly.
-
-<!-- Divider -->
-<p align="center"><img src="assets/divider.svg" width="70%" alt="divider" /></p>
+<p align="center">
+  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d6" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d6)" opacity="0.75"/><rect x="-1600" y="5" width="1600" height="2" fill="url(#d6)"><animate attributeName="x" from="-1600" to="1600" dur="6s" repeatCount="indefinite"/></rect></svg>
+</p>
 
 ## Folder Structure
+```txt
+src/
+└─ app/
+   └─ (microsites)/              ← route group (not in URL)
+      └─ <siteName>/             ← microsite slug (lowercase; e.g., "acme")
+         ├─ layout.tsx           ← optional local layout
+         ├─ page.tsx             ← /<siteName> (landing)
+         ├─ about/
+         │  └─ page.tsx          ← /<siteName>/about
+         ├─ services/
+         │  └─ page.tsx          ← /<siteName>/services
+         ├─ contact/
+         │  └─ page.tsx          ← /<siteName>/contact
+         └─ page/
+            └─ 1/
+               └─ page.tsx       ← /<siteName>/page/1 (example fixed route)
 
-src/ └─ app/ └─ (microsites)/              ← route group (does not appear in the URL) └─ <siteName>/             ← microsite slug (lowercase; e.g., "acme") ├─ layout.tsx           ← optional: local layout (nav/footer for this microsite) ├─ page.tsx             ← /<siteName>  (home / landing) ├─ about/ │  └─ page.tsx          ← /<siteName>/about ├─ services/ │  └─ page.tsx          ← /<siteName>/services ├─ contact/ │  └─ page.tsx          ← /<siteName>/contact └─ page/ └─ 1/ └─ page.tsx       ← /<siteName>/page/1  (example fixed pagination route)
+> 💡 Tip: keep directories lowercase for predictable URLs.
 
-> 💡 **Tip:** Keep folder names **lowercase** for clean, predictable URLs.
 
-<!-- Divider -->
-<p align="center"><img src="assets/divider.svg" width="70%" alt="divider" /></p>
 
-## Quick Start
+<p align="center">
+  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d7" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d7)" opacity="0.75"/><rect x="-1600" y="5" width="1600" height="2" fill="url(#d7)"><animate attributeName="x" from="-1600" to="1600" dur="6s" repeatCount="indefinite"/></rect></svg>
+</p>Quick Start
 
-```bash
 # 1) Create folders
 mkdir -p src/app/(microsites)/<siteName>/about
 mkdir -p src/app/(microsites)/<siteName>/services
@@ -135,9 +201,12 @@ mkdir -p src/app/(microsites)/<siteName>/page/1
 # 5) Deploy normally (e.g., Vercel)
 #   Routes are served under /<siteName>/
 
-<!-- Divider --><p align="center"><img src="assets/divider.svg" width="70%" alt="divider" /></p>Page Templates (TypeScript)
+<p align="center">
+  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d8" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d8)" opacity="0.75"/><rect x="-1600" y="5" width="1600" height="2" fill="url(#d8)"><animate attributeName="x" from="-1600" to="1600" dur="6s" repeatCount="indefinite"/></rect></svg>
+</p>Page Templates (TypeScript)
 
-// src/app/(microsites)/<siteName>/page.tsx
+Home – page.tsx
+
 export default function Home() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-12">
@@ -147,7 +216,8 @@ export default function Home() {
   );
 }
 
-// src/app/(microsites)/<siteName>/about/page.tsx
+About – about/page.tsx
+
 export default function About() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-12">
@@ -157,7 +227,8 @@ export default function About() {
   );
 }
 
-// src/app/(microsites)/<siteName>/services/page.tsx
+Services – services/page.tsx
+
 export default function Services() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-12">
@@ -167,7 +238,8 @@ export default function Services() {
   );
 }
 
-// src/app/(microsites)/<siteName>/contact/page.tsx
+Contact – contact/page.tsx
+
 export default function Contact() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-12">
@@ -177,7 +249,8 @@ export default function Contact() {
   );
 }
 
-// src/app/(microsites)/<siteName>/page/1/page.tsx
+Fixed Pagination – page/1/page.tsx
+
 export default function FixedPageOne() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-12">
@@ -187,7 +260,8 @@ export default function FixedPageOne() {
   );
 }
 
-// src/app/(microsites)/<siteName>/page/[index]/page.tsx
+Dynamic Pagination – page/[index]/page.tsx
+
 export default function Paged({ params }: { params: { index: string } }) {
   return (
     <main className="mx-auto max-w-5xl px-4 py-12">
@@ -197,15 +271,13 @@ export default function Paged({ params }: { params: { index: string } }) {
   );
 }
 
-<!-- Divider --><p align="center"><img src="assets/divider.svg" width="70%" alt="divider" /></p>Microsite Layout (layout.tsx)
+<p align="center">
+  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d9" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d9)" opacity="0.75"/><rect x="-1600" y="5" width="1600" height="2" fill="url(#d9)"><animate attributeName="x" from="-1600" to="1600" dur="6s" repeatCount="indefinite"/></rect></svg>
+</p>Microsite Layout (layout.tsx)
 
 import Link from "next/link";
 
-export default function MicrositeLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function MicrositeLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-dvh bg-white text-neutral-900">
       <nav className="sticky top-0 z-20 border-b bg-white/80 backdrop-blur">
@@ -222,39 +294,40 @@ export default function MicrositeLayout({
   );
 }
 
-<!-- Divider --><p align="center"><img src="assets/divider.svg" width="70%" alt="divider" /></p>Common Gotchas
+<p align="center">
+  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d10" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d10)" opacity="0.75"/><rect x="-1600" y="5" width="1600" height="2" fill="url(#d10)"><animate attributeName="x" from="-1600" to="1600" dur="6s" repeatCount="indefinite"/></rect></svg>
+</p>Common Gotchas
 
 404 on click? Folder names and link paths must match exactly.
 
-Lowercase everything. Keeps URLs predictable.
+Lowercase everything for predictable URLs.
 
-Don’t include route group names in URLs — (microsites) is invisible in routing.
+Route groups like (microsites) are not in the URL.
 
-Avoid conflicts: If you add page/[index], remove the fixed /page/1 folder.
+If you add page/[index], remove the fixed /page/1.
 
-Consistent layout: Use mx-auto max-w-5xl px-4 for centered responsive design.
-
-
-> [!IMPORTANT] This README uses dynamic SVG images (typing banner + gradient dividers). They render on GitHub without scripts.
+For consistent content width use mx-auto max-w-5xl px-4.
 
 
-
-> [!NOTE] The right-side rail collapses under the main content on mobile automatically.
+> [!IMPORTANT] All neon dividers are inline SVG; they render on GitHub without external files or CSS.
 
 
 
-<!-- Divider --><p align="center"><img src="assets/divider.svg" width="70%" alt="divider" /></p>FAQ
+> [!NOTE] The “info rail” at right is intentionally concise so it remains readable on mobile.
 
-Q: Can I build this in JavaScript instead of TypeScript?
-A: Yes — remove types and use .jsx files.
 
-Q: Can each microsite have different styling or animations?
-A: Yes — add custom CSS modules or Tailwind configs at the microsite level.
 
-Q: Can I convert this to subdomains?
-A: Yes — configure rewrites (e.g., sub.domain.com → /sub) in your deployment platform.
+<p align="center">
+  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d11" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d11)" opacity="0.75"/><rect x="-1600" y="5" width="1600" height="2" fill="url(#d11)"><animate attributeName="x" from="-1600" to="1600" dur="6s" repeatCount="indefinite"/></rect></svg>
+</p>FAQ
 
-<!-- Divider --><p align="center"><img src="assets/divider.svg" width="70%" alt="divider" /></p>Custom Open License — Microsite System Template
+Can I use JavaScript instead of TypeScript? Yes — use .jsx and remove types.
+Can each microsite have different styling/animations? Yes — use per-site CSS modules or Tailwind theme tokens.
+Can I use subdomains? Yes — add rewrites (e.g., sub.domain.com → /sub) in your deployment.
+
+<p align="center">
+  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d12" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d12)" opacity="0.75"/><rect x="-1600" y="5" width="1600" height="2" fill="url(#d12)"><animate attributeName="x" from="-1600" to="1600" dur="6s" repeatCount="indefinite"/></rect></svg>
+</p>Custom Open License — Microsite System Template
 
 This repository and template represent an original system design for creating embedded
 microsites within a parent Next.js application.
@@ -277,24 +350,27 @@ please include a clear credit line such as:
 This license is custom and non-standard. It grants open use and replication rights
 while reserving commercial distribution rights to the original creator.
 
-<!-- Divider --><p align="center"><img src="assets/divider.svg" width="60%" alt="divider" /></p><!-- end main column --></td>
-<td valign="top" width="32%">
+</td>
+<td valign="top" width="34%"><!-- =========================
+     RIGHT INFO RAIL (compact, mobile-friendly)
+========================= -->Tech Stack
 
-<!-- =========================
-     RIGHT INFO RAIL (no personal info)
-     ========================= --><h3>Tech Stack</h3>
 <p>
   <img src="https://skillicons.dev/icons?i=next,react,ts,tailwind" height="36" />
-</p><h3>Feature Matrix</h3>Feature	Microsite Template	Other Setup
+</p>Feature Matrix
 
-Clean folder routing	✔️	~
-Documented page stubs	✔️	❌
-Per-site layout	✔️	❌
-SEO-friendly subpaths	✔️	~
-Cross-promotion ready	✔️	❌
+Feature	✔ / ❌
+
+Clean folder routing	✔️
+Documented page stubs	✔️
+Per-site layout	✔️
+SEO-friendly subpaths	✔️
+Cross-promotion ready	✔️
 
 
-<h3>Data Snapshot (Example)</h3>Metric	Value
+Data Snapshot (example)
+
+Metric	Value
 
 Default pages	4
 Example pagination	1
@@ -303,29 +379,9 @@ Build script	yarn build
 Deploy target	Vercel
 
 
-<!-- Placeholder for small looping stickers --><p align="center">
-  <!-- <img src="YOUR_SMALL_CYBER_GIF" height="54" /> -->
-</p><!-- end rail --></td>
-
-  </tr>
+<!-- tiny sticker placeholder --><p align="center">
+  <!-- <img src="DIRECT_GIF_URL" height="46" /> -->
+</p></td>
+</tr>
 </table>
 ```
----
-
-Add this file: assets/divider.svg
-
-Put this file in an assets/ folder at the repo root. It animates a cyan→violet→magenta gradient bar and works on GitHub.
-
-<svg viewBox="0 0 1200 12" xmlns="http://www.w3.org/2000/svg" width="1200" height="12" role="img" aria-label="divider">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0%" stop-color="#00E5FF"/>
-      <stop offset="50%" stop-color="#8A2BE2"/>
-      <stop offset="100%" stop-color="#FF00CC"/>
-    </linearGradient>
-  </defs>
-  <rect x="0" y="5" width="1200" height="2" fill="url(#g)" opacity="0.65"/>
-  <rect x="-1200" y="5" width="1200" height="2" fill="url(#g)">
-    <animate attributeName="x" from="-1200" to="1200" dur="6s" repeatCount="indefinite" />
-  </rect>
-</svg>
