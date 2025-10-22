@@ -191,8 +191,7 @@ export default function Home() {
       <p className="mt-2 text-neutral-600">Welcome to your embedded microsite. Replace this with your hero content.</p>
     </main>
   );
-}
-```
+}```
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d7" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d7)" opacity="0.9"/></svg>
@@ -206,8 +205,7 @@ export default function About() {
       <p className="mt-2 text-neutral-600">Brief overview of your microsite’s purpose, team, or background.</p>
     </main>
   );
-}
-```
+}```
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d8" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d8)" opacity="0.9"/></svg>
@@ -221,8 +219,7 @@ export default function Services() {
       <p className="mt-2 text-neutral-600">Describe your offerings, tiers, or features here.</p>
     </main>
   );
-}
-```
+}```
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d9" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d9)" opacity="0.9"/></svg>
@@ -236,8 +233,7 @@ export default function Contact() {
       <p className="mt-2 text-neutral-600">Provide an email, form, or other contact method.</p>
     </main>
   );
-}
-```
+}```
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d10" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d10)" opacity="0.9"/></svg>
@@ -251,8 +247,7 @@ export default function FixedPageOne() {
       <p className="mt-2 text-neutral-600">This is a fixed route at /&lt;siteName&gt;/page/1.</p>
     </main>
   );
-}
-```
+}```
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d11" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d11)" opacity="0.9"/></svg>
@@ -266,8 +261,7 @@ export default function Paged({ params }: { params: { index: string } }) {
       <p className="mt-2 text-neutral-600">Render paginated content based on the index.</p>
     </main>
   );
-}
-```
+}```
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d12" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d12)" opacity="0.9"/></svg>
@@ -291,8 +285,7 @@ export default function MicrositeLayout({ children }: { children: React.ReactNod
       {children}
     </div>
   );
-}
-```
+}```
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d13" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d13)" opacity="0.9"/></svg>
