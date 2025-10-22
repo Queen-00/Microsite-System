@@ -191,7 +191,8 @@ export default function Home() {
       <p className="mt-2 text-neutral-600">Welcome to your embedded microsite. Replace this with your hero content.</p>
     </main>
   );
-}```
+}
+```
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d7" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d7)" opacity="0.9"/></svg>
