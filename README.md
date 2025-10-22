@@ -181,7 +181,6 @@ mkdir -p src/app/(microsites)/<siteName>/page/1
 </p><p align="center">
   <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d6" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d6)" opacity="0.9"/></svg>
 </p>Page Templates (TypeScript)
-
 Home — page.tsx
 
 ```
@@ -197,9 +196,7 @@ export default function Home() {
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d7" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d7)" opacity="0.9"/></svg>
-</p>
-
-About — about/page.tsx
+</p>About — about/page.tsx
 
 ```
 export default function About() {
@@ -214,9 +211,7 @@ export default function About() {
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d8" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d8)" opacity="0.9"/></svg>
-</p>
-
-Services — services/page.tsx
+</p>Services — services/page.tsx
 
 ```
 export default function Services() {
@@ -231,9 +226,7 @@ export default function Services() {
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d9" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d9)" opacity="0.9"/></svg>
-</p>
-
-Contact — contact/page.tsx
+</p>Contact — contact/page.tsx
 
 ```
 export default function Contact() {
@@ -248,9 +241,7 @@ export default function Contact() {
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d10" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d10)" opacity="0.9"/></svg>
-</p>
-
-Fixed Pagination — page/1/page.tsx
+</p>Fixed Pagination — page/1/page.tsx
 
 ```
 export default function FixedPageOne() {
@@ -265,9 +256,7 @@ export default function FixedPageOne() {
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d11" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d11)" opacity="0.9"/></svg>
-</p>
-
-Dynamic Pagination — page/[index]/page.tsx
+</p>Dynamic Pagination — page/[index]/page.tsx
 
 ```
 export default function Paged({ params }: { params: { index: string } }) {
@@ -282,9 +271,7 @@ export default function Paged({ params }: { params: { index: string } }) {
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d12" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d12)" opacity="0.9"/></svg>
-</p>
-
-Microsite Layout (layout.tsx)
+</p>Microsite Layout (layout.tsx)
 
 ```
 import Link from "next/link";
@@ -309,9 +296,7 @@ export default function MicrositeLayout({ children }: { children: React.ReactNod
 
 <p align="center">
   <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d13" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d13)" opacity="0.9"/></svg>
-</p>
-
-Common Gotchas
+</p>Common Gotchas
 
 404 on click? Folder names and link paths must match exactly.
 
@@ -328,9 +313,7 @@ Consistent content width: mx-auto max-w-5xl px-4.
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=14&duration=2600&pause=1200&center=true&vCenter=true&width=520&color=8A2BE2&lines=Tip%3A+Keep+routes+predictable.;Use+lowercase+folders+everywhere." alt="typing-tips" />
 </p><p align="center">
   <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d14" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d14)" opacity="0.9"/></svg>
-</p>
-
-FAQ
+</p>FAQ
 
 Can I use JavaScript instead of TypeScript? Yes — use .jsx and remove types.
 Can each microsite have different styling/animations? Yes — use per-site CSS modules or Tailwind theme tokens.
@@ -341,9 +324,7 @@ Can I use subdomains? Yes — add rewrites (e.g., sub.domain.com → /sub) in yo
   <a href="#page-templates-typescript"><img src="https://img.shields.io/badge/View-Code_Stubs-bf26ff?style=for-the-badge" alt="View Code Stubs"></a>
 </p><p align="center">
   <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d15" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d15)" opacity="0.9"/></svg>
-</p>
-
-Custom Open License — Microsite System Template
+</p>Custom Open License — Microsite System Template
 
 This repository and template represent an original system design for creating embedded microsites within a parent Next.js application.
 
@@ -368,8 +349,6 @@ Attribution Requirement
 When reusing this template or substantial parts of its structure or documentation, include a credit line such as:
 “Based on the Microsite System Template (© 2025 Original Author)”
 
-
----
 
 Tech Stack (icons)
 
