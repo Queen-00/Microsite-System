@@ -23,46 +23,49 @@
 
 <!-- Typing subtitle -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2600&pause=900&center=true&vCenter=true&width=640&color=8A2BE2&lines=%F0%9F%92%A1+Next.js+15+App+Router;%F0%9F%93%9A+Copy%2FPaste+page.tsx+stubs;%F0%9F%9A%80+Build+internal+sub-sites+fast" alt="typing-subtitle" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2600&pause=900&center=true&vCenter=true&width=640&color=8A2BE2&lines=%F0%9F%92%A1+Next.js+15+App+Router;%F0%9F%93%9A+Copy%2FPaste+page.tsx+stubs;%F0%9F%9A%80+Build+internal+sub-sites+fast" alt="typing-subtitle" style="max-width:100%;"/>
 </p>
 
-<!-- Tech badges -->
+<!-- Tech badges (split across lines for mobile safety) -->
 <p align="center">
-  <a href="#folder-structure"><img src="https://img.shields.io/badge/Next.js-15-000000?logo=nextdotjs" alt="Next.js 15"/></a>
-  <a href="#page-templates-typescript"><img src="https://img.shields.io/badge/React-19-20232a?logo=react" alt="React 19"/></a>
-  <a href="#language--compatibility"><img src="https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript&logoColor=white" alt="TS 5.x"/></a>
-  <img src="https://img.shields.io/badge/App_Router-Enabled-8A2BE2" alt="App Router"/>
-  <img src="https://img.shields.io/badge/License-Custom-FF00CC" alt="License"/>
-  <img src="https://img.shields.io/badge/Status-Template%20Ready-22c55e" alt="Status"/>
+  <a href="#folder-structure"><img src="https://img.shields.io/badge/Next.js-15-000000?logo=nextdotjs" alt="Next.js 15" style="max-width:100%;"></a>
+  <a href="#page-templates-typescript"><img src="https://img.shields.io/badge/React-19-20232a?logo=react" alt="React 19" style="max-width:100%;"></a>
+  <a href="#language--compatibility"><img src="https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript&logoColor=white" alt="TS 5.x" style="max-width:100%;"></a>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/App_Router-Enabled-8A2BE2" alt="App Router" style="max-width:100%;"/>
+  <img src="https://img.shields.io/badge/License-Custom-FF00CC" alt="License" style="max-width:100%;"/>
+  <img src="https://img.shields.io/badge/Status-Template%20Ready-22c55e" alt="Status" style="max-width:100%;"/>
 </p>
 
 <!-- Quick-link buttons -->
 <p align="center">
-  <a href="#quick-start"><img src="https://img.shields.io/badge/QUICK_START-%E2%9A%A1-6b21e6?style=for-the-badge" alt="Quick Start"></a>
-  <a href="#folder-structure"><img src="https://img.shields.io/badge/STRUCTURE-%F0%9F%93%81-ca27b9?style=for-the-badge" alt="Structure"></a>
-  <a href="#page-templates-typescript"><img src="https://img.shields.io/badge/TEMPLATES-%F0%9F%96%A5-0ea5e9?style=for-the-badge" alt="Templates"></a>
-  <a href="#why-microsites-benefits--use-cases"><img src="https://img.shields.io/badge/BENEFITS-%F0%9F%8C%9F-bf26ff?style=for-the-badge" alt="Benefits"></a>
+  <a href="#quick-start"><img src="https://img.shields.io/badge/QUICK_START-%E2%9A%A1-6b21e6?style=for-the-badge" alt="Quick Start" style="max-width:100%;"></a>
+  <a href="#folder-structure"><img src="https://img.shields.io/badge/STRUCTURE-%F0%9F%93%81-ca27b9?style=for-the-badge" alt="Structure" style="max-width:100%;"></a>
+</p>
+<p align="center">
+  <a href="#page-templates-typescript"><img src="https://img.shields.io/badge/TEMPLATES-%F0%9F%96%A5-0ea5e9?style=for-the-badge" alt="Templates" style="max-width:100%;"></a>
+  <a href="#why-microsites-benefits--use-cases"><img src="https://img.shields.io/badge/BENEFITS-%F0%9F%8C%9F-bf26ff?style=for-the-badge" alt="Benefits" style="max-width:100%;"></a>
 </p>
 
-<!-- Static neon divider -->
+<!-- Static neon divider (fluid, overflow-safe) -->
 <p align="center">
-  <svg viewBox="0 0 1600 12" width="92%" height="12" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="divider">
+  <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="divider">
     <defs><linearGradient id="d0" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs>
-    <rect x="0" y="5" width="1600" height="2" fill="url(#d0)" opacity="0.9"/>
+    <rect x="0" y="0" width="100" height="2" fill="url(#d0)" opacity="0.9"/>
   </svg>
 </p>
 
-<!-- Two-column layout (stacks on mobile) -->
-<table>
-<tr>
-<td valign="top" width="66%">
+<!-- Two-column layout (fluid; fixed table layout prevents overflow calc issues) -->
+<table width="100%" style="table-layout:fixed;">
+  <tr>
+    <td valign="top" width="66%" style="vertical-align:top;">
 
 > Build a small **“microsite” inside your main Next.js app** (e.g. `/brand`, `/press`, `/docs`) with clean, URL-mirroring folders and a local layout.  
 > This guide provides a TypeScript blank template showing the structure, page files, and practical benefits.
 
-<!-- Divider -->
 <p align="center">
-  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d1" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d1)" opacity="0.9"/></svg>
+  <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d1" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d1)" opacity="0.9"/></svg>
 </p>
 
 ## Table of Contents
@@ -78,7 +81,7 @@
 - [Custom Open License — Microsite System Template](#custom-open-license--microsite-system-template)
 
 <p align="center">
-  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d2" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d2)" opacity="0.9"/></svg>
+  <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d2" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d2)" opacity="0.9"/></svg>
 </p>
 
 ## Overview
@@ -88,25 +91,33 @@ A **microsite** is a self-contained set of pages under a single path like `/<sit
 > Assumes **Next.js 15 (App Router)** + **TypeScript**. Prefer JS? Keep the folders and drop the types.
 
 <p align="center">
-  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d3" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d3)" opacity="0.9"/></svg>
+  <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d3" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d3)" opacity="0.9"/></svg>
 </p>
 
 ## Why Microsites? (Benefits & Use Cases)
 
-**Quick matrix (pros/cons)**
-
-| Capability / Outcome            | Microsite Approach | Alternative |
-|---------------------------------|:------------------:|:-----------:|
-| Cost-efficient hosting          | ✔️                 | ❌          |
-| Shared auth/analytics           | ✔️                 | ❌          |
-| Centralized maintenance         | ✔️                 | ~           |
-| Brand cohesion (sub-brands)     | ✔️                 | ~           |
-| SEO synergy (subpaths)          | ✔️                 | ❌          |
-| Single-repo content ops         | ✔️                 | ❌          |
-| Easy cross-promotion            | ✔️                 | ❌          |
-| Fast seasonal launches          | ✔️                 | ~           |
-| Per-site layout/theming         | ✔️                 | ~           |
-| Multi-tenant friendly           | ✔️                 | ❌          |
+<!-- Use HTML table here (Markdown tables don't render inside raw HTML blocks reliably) -->
+<table>
+  <thead>
+    <tr>
+      <th>Capability / Outcome</th>
+      <th style="text-align:center;">Microsite Approach</th>
+      <th style="text-align:center;">Alternative</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Cost-efficient hosting</td><td align="center">✔️</td><td align="center">❌</td></tr>
+    <tr><td>Shared auth/analytics</td><td align="center">✔️</td><td align="center">❌</td></tr>
+    <tr><td>Centralized maintenance</td><td align="center">✔️</td><td align="center">~</td></tr>
+    <tr><td>Brand cohesion (sub-brands)</td><td align="center">✔️</td><td align="center">~</td></tr>
+    <tr><td>SEO synergy (subpaths)</td><td align="center">✔️</td><td align="center">❌</td></tr>
+    <tr><td>Single-repo content ops</td><td align="center">✔️</td><td align="center">❌</td></tr>
+    <tr><td>Easy cross-promotion</td><td align="center">✔️</td><td align="center">❌</td></tr>
+    <tr><td>Fast seasonal launches</td><td align="center">✔️</td><td align="center">~</td></tr>
+    <tr><td>Per-site layout/theming</td><td align="center">✔️</td><td align="center">~</td></tr>
+    <tr><td>Multi-tenant friendly</td><td align="center">✔️</td><td align="center">❌</td></tr>
+  </tbody>
+</table>
 
 **Details**
 1) **Cost-Efficient** — Reuse hosting & CI/CD; no extra domain/SSL.  
@@ -121,7 +132,7 @@ A **microsite** is a self-contained set of pages under a single path like `/<sit
 10) **Scalable** — Clean path to multi-tenant later.
 
 <p align="center">
-  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d4" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d4)" opacity="0.9"/></svg>
+  <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d4" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d4)" opacity="0.9"/></svg>
 </p>
 
 ## Language & Compatibility
@@ -130,11 +141,11 @@ A **microsite** is a self-contained set of pages under a single path like `/<sit
 - **Other frameworks:** Nuxt/Remix use different routing; adapt folder names.
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=14&duration=2600&pause=900&center=true&vCenter=true&width=520&color=00E5FF&lines=Works+great+with+TS...;...and+easy+to+convert+to+JS" alt="typing-note" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=14&duration=2600&pause=900&center=true&vCenter=true&width=520&color=00E5FF&lines=Works+great+with+TS...;...and+easy+to+convert+to+JS" alt="typing-note" style="max-width:100%;"/>
 </p>
 
 <p align="center">
-  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d5" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d5)" opacity="0.9"/></svg>
+  <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d5" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d5)" opacity="0.9"/></svg>
 </p>
 
 ## Folder Structure
@@ -160,7 +171,7 @@ src/
 
 
 <p align="center">
-  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d6" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d6)" opacity="0.9"/></svg>
+  <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d6" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d6)" opacity="0.9"/></svg>
 </p>Quick Start
 
 # 1) Create folders
@@ -186,9 +197,9 @@ mkdir -p src/app/(microsites)/<siteName>/page/1
 #   Routes are served under /<siteName>/
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=14&duration=2600&pause=900&center=true&vCenter=true&width=520&color=FF00CC&lines=Copy+the+stubs+%E2%86%92+paste+%E2%86%92+ship" alt="typing-quickstart" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=14&duration=2600&pause=900&center=true&vCenter=true&width=520&color=FF00CC&lines=Copy+the+stubs+%E2%86%92+paste+%E2%86%92+ship" alt="typing-quickstart" style="max-width:100%;"/>
 </p><p align="center">
-  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d7" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d7)" opacity="0.9"/></svg>
+  <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d7" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d7)" opacity="0.9"/></svg>
 </p>Page Templates (TypeScript)
 
 Home — page.tsx
@@ -202,7 +213,9 @@ export default function Home() {
   );
 }
 
-<p align="center"><svg viewBox="0 0 1600 12" width="72%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d8" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d8)" opacity="0.9"/></svg></p>About — about/page.tsx
+<p align="center">
+  <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d8" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d8)" opacity="0.9"/></svg>
+</p>About — about/page.tsx
 
 export default function About() {
   return (
@@ -213,7 +226,9 @@ export default function About() {
   );
 }
 
-<p align="center"><svg viewBox="0 0 1600 12" width="72%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d9" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d9)" opacity="0.9"/></svg></p>Services — services/page.tsx
+<p align="center">
+  <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d9" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d9)" opacity="0.9"/></svg>
+</p>Services — services/page.tsx
 
 export default function Services() {
   return (
@@ -224,7 +239,9 @@ export default function Services() {
   );
 }
 
-<p align="center"><svg viewBox="0 0 1600 12" width="72%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d10" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d10)" opacity="0.9"/></svg></p>Contact — contact/page.tsx
+<p align="center">
+  <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d10" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d10)" opacity="0.9"/></svg>
+</p>Contact — contact/page.tsx
 
 export default function Contact() {
   return (
@@ -235,7 +252,9 @@ export default function Contact() {
   );
 }
 
-<p align="center"><svg viewBox="0 0 1600 12" width="72%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d11" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d11)" opacity="0.9"/></svg></p>Fixed Pagination — page/1/page.tsx
+<p align="center">
+  <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d11" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d11)" opacity="0.9"/></svg>
+</p>Fixed Pagination — page/1/page.tsx
 
 export default function FixedPageOne() {
   return (
@@ -246,7 +265,9 @@ export default function FixedPageOne() {
   );
 }
 
-<p align="center"><svg viewBox="0 0 1600 12" width="72%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d12" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d12)" opacity="0.9"/></svg></p>Dynamic Pagination — page/[index]/page.tsx
+<p align="center">
+  <svg viewBox="0 0 100 2" width="72%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d12" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d12)" opacity="0.9"/></svg>
+</p>Dynamic Pagination — page/[index]/page.tsx
 
 export default function Paged({ params }: { params: { index: string } }) {
   return (
@@ -258,7 +279,7 @@ export default function Paged({ params }: { params: { index: string } }) {
 }
 
 <p align="center">
-  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d13" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d13)" opacity="0.9"/></svg>
+  <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d13" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d13)" opacity="0.9"/></svg>
 </p>Microsite Layout (layout.tsx)
 
 import Link from "next/link";
@@ -281,7 +302,7 @@ export default function MicrositeLayout({ children }: { children: React.ReactNod
 }
 
 <p align="center">
-  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d14" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d14)" opacity="0.9"/></svg>
+  <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d14" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d14)" opacity="0.9"/></svg>
 </p>Common Gotchas
 
 404 on click? Folder names and link paths must match exactly.
@@ -296,9 +317,9 @@ Consistent content width: mx-auto max-w-5xl px-4.
 
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=14&duration=2600&pause=1200&center=true&vCenter=true&width=520&color=8A2BE2&lines=Tip%3A+Keep+routes+predictable.;Use+lowercase+folders+everywhere." alt="typing-tips" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=14&duration=2600&pause=1200&center=true&vCenter=true&width=520&color=8A2BE2&lines=Tip%3A+Keep+routes+predictable.;Use+lowercase+folders+everywhere." alt="typing-tips" style="max-width:100%;"/>
 </p><p align="center">
-  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d15" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d15)" opacity="0.9"/></svg>
+  <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d15" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d15)" opacity="0.9"/></svg>
 </p>FAQ
 
 Can I use JavaScript instead of TypeScript? Yes — use .jsx and remove types.
@@ -306,10 +327,10 @@ Can each microsite have different styling/animations? Yes — use per-site CSS m
 Can I use subdomains? Yes — add rewrites (e.g., sub.domain.com → /sub) in your deployment.
 
 <p align="center">
-  <a href="#quick-start"><img src="https://img.shields.io/badge/Return_to-Quick_Start-0ea5e9?style=for-the-badge" alt="Back to Quick Start"></a>
-  <a href="#page-templates-typescript"><img src="https://img.shields.io/badge/View-Code_Stubs-bf26ff?style=for-the-badge" alt="View Code Stubs"></a>
+  <a href="#quick-start"><img src="https://img.shields.io/badge/Return_to-Quick_Start-0ea5e9?style=for-the-badge" alt="Back to Quick Start" style="max-width:100%;"></a>
+  <a href="#page-templates-typescript"><img src="https://img.shields.io/badge/View-Code_Stubs-bf26ff?style=for-the-badge" alt="View Code Stubs" style="max-width:100%;"></a>
 </p><p align="center">
-  <svg viewBox="0 0 1600 12" width="82%" height="12" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d16" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="5" width="1600" height="2" fill="url(#d16)" opacity="0.9"/></svg>
+  <svg viewBox="0 0 100 2" width="100%" height="2" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="d16" x1="0" x2="1"><stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#8A2BE2"/><stop offset="100%" stop-color="#FF00CC"/></linearGradient></defs><rect x="0" y="0" width="100" height="2" fill="url(#d16)" opacity="0.9"/></svg>
 </p>Custom Open License — Microsite System Template
 
 This repository and template represent an original system design for creating embedded microsites within a parent Next.js application.
@@ -335,39 +356,38 @@ Attribution Requirement
 When reusing this template or substantial parts of its structure or documentation, include a credit line such as:
 “Based on the Microsite System Template (© 2025 Original Author)”
 
-This license is custom and non-standard. It grants open use and replication rights while reserving commercial distribution rights to the original creator.
-
 </td>
-<td valign="top" width="34%"><!-- ============ RIGHT INFO RAIL (compact) ============ -->Tech Stack
+<td valign="top" width="34%" style="vertical-align:top;"><!-- ============ RIGHT INFO RAIL (compact, fluid) ============ -->Tech Stack
 
-<p><img src="https://skillicons.dev/icons?i=next,react,ts,tailwind" height="36"/></p>Feature Matrix
+<p><img src="https://skillicons.dev/icons?i=next,react,ts,tailwind" height="36" style="max-width:100%;"/></p>Feature Matrix
 
-Feature	✔ / ❌
+<table>
+  <thead>
+    <tr><th>Feature</th><th style="text-align:center;">✔ / ❌</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Clean folder routing</td><td align="center">✔️</td></tr>
+    <tr><td>Documented page stubs</td><td align="center">✔️</td></tr>
+    <tr><td>Per-site layout</td><td align="center">✔️</td></tr>
+    <tr><td>SEO-friendly subpaths</td><td align="center">✔️</td></tr>
+    <tr><td>Cross-promotion ready</td><td align="center">✔️</td></tr>
+  </tbody>
+</table>Data Snapshot (example)
 
-Clean folder routing	✔️
-Documented page stubs	✔️
-Per-site layout	✔️
-SEO-friendly subpaths	✔️
-Cross-promotion ready	✔️
-
-
-Data Snapshot (example)
-
-Metric	Value
-
-Default pages	4
-Example pagination	1
-Routing depth	3
-Build script	yarn build
-Deploy target	Vercel
-
-
-<p align="center">
+<table>
+  <tbody>
+    <tr><td>Default pages</td><td align="right">4</td></tr>
+    <tr><td>Example pagination</td><td align="right">1</td></tr>
+    <tr><td>Routing depth</td><td align="right">3</td></tr>
+    <tr><td>Build script</td><td align="right"><code>yarn build</code></td></tr>
+    <tr><td>Deploy target</td><td align="right">Vercel</td></tr>
+  </tbody>
+</table><p align="center">
   <!-- optional tiny looping sticker -->
-  <!-- <img src="DIRECT_GIF_URL" height="46" /> -->
+  <!-- <img src="DIRECT_GIF_URL" height="46" style="max-width:100%;"/> -->
 </p><p align="center">
-  <a href="#overview"><img src="https://img.shields.io/badge/Back_to-Overview-6b21e6?style=for-the-badge" alt="Back to Overview"></a>
-</p></td>
+  <a href="#overview"><img src="https://img.shields.io/badge/Back_to-Overview-6b21e6?style=for-the-badge" alt="Back to Overview" style="max-width:100%;"></a>
+</p>
+</td>
 </tr>
 </table>
-```
